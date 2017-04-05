@@ -1,15 +1,26 @@
 import React from 'react';
-import { View, Text } from 'react-native';
-import { Picker } from 'native-base';
+import { Text } from 'react-native';
+import { Container, Tabs, Tab } from 'native-base';
+import EventBoard from './EventBoard/EventBoard';
+import Player from './Player/Player';
+import Magazine from './Magazine/Magazine';
 
 export default class MainView extends React.Component {
     render() {
         return(
-            <View>
-                <Text style={{fontSize:50}}>
-                        Hi There.
-                </Text>
-            </View>
+            <Container>
+                <Tabs>
+                    <Tab heading="Player">
+                        <Player></Player>
+                    </Tab>
+                    <Tab heading="Magazine">
+                        <Magazine></Magazine>
+                    </Tab>
+                    <Tab heading="Events">
+                        <EventBoard></EventBoard>
+                    </Tab>
+                </Tabs>
+            </Container>
         );
     }
 }
