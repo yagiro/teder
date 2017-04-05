@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text } from 'react-native';
+import { Picker } from 'native-base';
 
 export default class MainView extends React.Component {
     render() {
