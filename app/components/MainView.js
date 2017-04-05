@@ -17,7 +17,7 @@ export default class MainView extends React.Component {
                         <Magazine></Magazine>
                     </Tab>
                     <Tab heading="Events">
-                        <EventBoard></EventBoard>
+                        <EventBoard events={[1,2,3,4,5,6]}></EventBoard>
                     </Tab>
                 </Tabs>
             </Container>
