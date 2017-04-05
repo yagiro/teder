@@ -1,14 +1,20 @@
 import React, { Component } from 'react';
 import { Text } from 'react-native';
-import { Container } from 'native-base';
+import { Container, Content } from 'native-base';
+import ImageCard from '../ImageCard';
 
 export default class EventBoard extends Component {
     render() {
         return(
             <Container>
-                <Text style={{fontSize:50}}>
-                    Event Board
-                </Text>
+                <Content>
+                    <ImageCard></ImageCard>
+                    <ImageCard></ImageCard>
+                    <ImageCard></ImageCard>
+                    <ImageCard></ImageCard>
+                    <ImageCard></ImageCard>
+                    <ImageCard></ImageCard>
+                </Content>
             </Container>
         );
     }
