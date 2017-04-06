@@ -4,6 +4,7 @@ import { Container, Tabs, Tab } from 'native-base';
 import EventBoard from './EventBoard/EventBoard';
 import Player from './Player/Player';
 import Magazine from './Magazine/Magazine';
+import { createStore } from 'redux';
 
 export default class MainView extends React.Component {
     render() {

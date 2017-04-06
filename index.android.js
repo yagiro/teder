@@ -12,12 +12,12 @@ import {
   View
 } from 'react-native';
 
-import MainView from './app/components/MainView';
+import App from './app/App';
 
 export default class Teder extends Component {
   render() {
     return (
-      <MainView></MainView>
+      <App></App>
     );
   }
 }
