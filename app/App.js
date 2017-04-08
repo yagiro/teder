@@ -14,7 +14,9 @@ export default class App extends Component {
         return(
             <Provider store={ store }>
                 <Container>
-                    <Tabs onChangeTab={data => store.dispatch(tabChanged(data.from, data.i))}>
+                    <Tabs   initialPage={1}
+                            onChangeTab={data => store.dispatch(tabChanged(data.from, data.i))}>
+
                         <Tab heading="Player">
                             <Player tabId={0}></Player>
                         </Tab>
@@ -24,6 +26,7 @@ export default class App extends Component {
                         <Tab heading="Events">
                             <EventBoard></EventBoard>
                         </Tab>
+                        
                     </Tabs>
                 </Container>
             </Provider>

@@ -26,7 +26,7 @@ Player.propTypes = {
 };
 
 const mapStateToProps = (state, ownProps) => ({
-    isActiveTab: state.activeTab === ownProps.tabId
+    isActiveTab: state.app.activeTab === ownProps.tabId
 });
 
 export default connect(mapStateToProps,null)(Player);

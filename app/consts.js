@@ -1,1 +1,3 @@
 export const TAB_CHANGED  = 'TAB_CHANGED';
+export const ARTICLE_ENTER  = 'ARTICLE_ENTER';
+export const ARTICLE_LEAVE = 'ARTICLE_LEAVE';

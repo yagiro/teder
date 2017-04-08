@@ -25,7 +25,7 @@ EventBoard.propTypes = {
 };
 
 const mapStateToProps = state => ({
-    events: state.events
+    events: state.eventBoard.events
 });
 
 const mapDispatchToProps = dispatch => ({
