@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { Text, View } from 'react-native';
 import { Container } from 'native-base';
 import VideoPlayer from './VideoPlayer';
+import VideosList from './VideosList';
 import { connect } from 'react-redux';
 
 class Player extends Component {
@@ -13,7 +14,7 @@ class Player extends Component {
                     <VideoPlayer flex={3}></VideoPlayer>                    
                 }
                 <View flex={5}>
-                    <Text>{ this.props.isActiveTab ? 'active': ''}</Text>
+                    <VideosList></VideosList>
                 </View>
             </Container>
         );
