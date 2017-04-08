@@ -1,0 +1,12 @@
+{
+    "magazine": {
+        "title": "Magazine"
+    },
+    "player": {
+        "title": "Player"
+    },
+    "eventBoard": {
+        "title": "Events"
+    }
+
+}
