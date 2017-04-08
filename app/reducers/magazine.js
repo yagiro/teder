@@ -1,4 +1,4 @@
-import { ARTICLE_ENTER } from '../consts';
+import { ARTICLE_ENTER, ARTICLE_LEAVE } from '../consts';
 
 const initialState = {
     isArticleMode: false,
@@ -11,6 +11,12 @@ const magazineReducer = (state = initialState, action) => {
             return Object.assign({}, state, {
                 isArticleMode: true,
                 articleId: action.id
+            });
+            break;
+        case ARTICLE_LEAVE:
+            return Object.assign({}, state, {
+                isArticleMode: false,
+                articleId: null
             });
             break;
         default:
