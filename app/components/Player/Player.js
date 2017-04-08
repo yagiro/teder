@@ -8,7 +8,10 @@ class Player extends Component {
     render() {
         return(
             <Container style={{backgroundColor:'white'}}>
-                <VideoPlayer flex={3}></VideoPlayer>
+                {
+                    !this.props.isActiveTab ? null :
+                    <VideoPlayer flex={3}></VideoPlayer>                    
+                }
                 <View flex={5}>
                     <Text>{ this.props.isActiveTab ? 'active': ''}</Text>
                 </View>

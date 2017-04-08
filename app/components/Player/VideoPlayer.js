@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import Video from 'react-native-video';
 
 export default class VideoPlayer extends Component {
     render() {
         return(
             <Video  source={require('./broadchurch.mp4')}
-                    ref={ref => this.player = ref }
-                    rate={1.0}
+                    ref={ref => { this.player = ref; console.log(this.player); } }
+                    rate={0.0}
                     resizeMode='contain'
-                    paused={false}
-                    muted={true}
-                    controls={true}
+                    paused={true}
+                    muted={false}
+                    controls={ true }
                     onError={e => e }
                     onLoadStart={e => e}
                     onLoad={e => e}
@@ -21,3 +21,7 @@ export default class VideoPlayer extends Component {
         );
     }
 }
+
+VideoPlayer.propTypes = {
+    flex: PropTypes.number,
+};
